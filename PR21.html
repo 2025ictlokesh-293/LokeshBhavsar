@@ -1,0 +1,117 @@
+﻿<html>
+<head>
+    <title>User Information Form</title>
+
+    <style>
+
+        body {
+            font-family: Arial;
+            background: linear-gradient(135deg,#74ebd5,#ACB6E5);
+        }
+
+        .container {
+            width: 400px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            text-align: center;
+            color: #ff4d6d;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .section {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            background: #f9f9ff;
+        }
+
+            .section h3 {
+                color: #4CAF50;
+            }
+
+        input[type=text] {
+            width: 100%;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        label {
+            color: #333;
+        }
+
+        button {
+            width: 100%;
+            background: linear-gradient(90deg,#ff7e5f,#feb47b);
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+            button:hover {
+                background: linear-gradient(90deg,#ff9966,#ff5e62);
+            }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>User Information Form</h1>
+        <p>Please fill out the form below with your details.</p>
+        <hr>
+
+        <form>
+
+            <div class="section">
+                <h3>Personal Information</h3>
+
+                <label>First Name:</label><br>
+                <input type="text" id="fname" name="fname" placeholder="Enter your first name"><br><br>
+
+                <label>Last Name:</label><br>
+                <input type="text" id="lname" name="lname" placeholder="Enter your last name">
+            </div>
+
+            <div class="section">
+                <h3>Select Your Skills</h3>
+                <p>Select the skills that you have</p>
+
+                <input type="radio" name="skill" value="HTML"> HTML<br>
+                <input type="radio" name="skill" value="C Programming"> C Programming<br>
+                <input type="radio" name="skill" value="Python"> Python
+            </div>
+
+            <div class="section">
+                <h3>Hobbies</h3>
+                <p>Select your hobbies:</p>
+
+                <input type="checkbox" name="hobby" value="Reading"> Reading<br>
+                <input type="checkbox" name="hobby" value="Sports"> Sports<br>
+                <input type="checkbox" name="hobby" value="Music"> Music<br>
+                <input type="checkbox" name="hobby" value="Other"> Other
+            </div>
+
+            <br>
+
+            <button type="submit">Submit Form</button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
